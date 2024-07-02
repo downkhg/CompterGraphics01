@@ -1,0 +1,14 @@
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\bin\Debug\netcoreapp3.1\ThreadTaskAsync.exe
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\bin\Debug\netcoreapp3.1\ThreadTaskAsync.deps.json
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\bin\Debug\netcoreapp3.1\ThreadTaskAsync.runtimeconfig.json
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\bin\Debug\netcoreapp3.1\ThreadTaskAsync.runtimeconfig.dev.json
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\bin\Debug\netcoreapp3.1\ThreadTaskAsync.dll
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\bin\Debug\netcoreapp3.1\ThreadTaskAsync.pdb
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\obj\Debug\netcoreapp3.1\ThreadTaskAsync.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\obj\Debug\netcoreapp3.1\ThreadTaskAsync.AssemblyInfoInputs.cache
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\obj\Debug\netcoreapp3.1\ThreadTaskAsync.AssemblyInfo.cs
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\obj\Debug\netcoreapp3.1\ThreadTaskAsync.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\obj\Debug\netcoreapp3.1\ThreadTaskAsync.sourcelink.json
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\obj\Debug\netcoreapp3.1\ThreadTaskAsync.dll
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\obj\Debug\netcoreapp3.1\ThreadTaskAsync.pdb
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\obj\Debug\netcoreapp3.1\ThreadTaskAsync.genruntimeconfig.cache

@@ -1,0 +1,15 @@
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\bin\Debug\net8.0\ThreadTaskAsync.exe
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\bin\Debug\net8.0\ThreadTaskAsync.deps.json
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\bin\Debug\net8.0\ThreadTaskAsync.runtimeconfig.json
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\bin\Debug\net8.0\ThreadTaskAsync.dll
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\bin\Debug\net8.0\ThreadTaskAsync.pdb
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\obj\Debug\net8.0\ThreadTaskAsync.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\obj\Debug\net8.0\ThreadTaskAsync.AssemblyInfoInputs.cache
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\obj\Debug\net8.0\ThreadTaskAsync.AssemblyInfo.cs
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\obj\Debug\net8.0\ThreadTaskAsync.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\obj\Debug\net8.0\ThreadTaskAsync.sourcelink.json
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\obj\Debug\net8.0\ThreadTaskAsync.dll
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\obj\Debug\net8.0\refint\ThreadTaskAsync.dll
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\obj\Debug\net8.0\ThreadTaskAsync.pdb
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\obj\Debug\net8.0\ThreadTaskAsync.genruntimeconfig.cache
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\ThreadTaskAsync_CS\ThreadTaskAsync\obj\Debug\net8.0\ref\ThreadTaskAsync.dll
