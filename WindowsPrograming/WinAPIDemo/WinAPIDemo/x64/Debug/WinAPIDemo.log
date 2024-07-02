@@ -1,4 +1,4 @@
 ﻿  main.cpp
-C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\WinAPIDemo\WinAPIDemo\main.cpp(75,3): warning C4312: '형식 캐스트': 'DWORD'에서 더 큰 'unsigned int *'(으)로의 변환입니다.
-C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\WinAPIDemo\WinAPIDemo\main.cpp(79,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\WinAPIDemo\WinAPIDemo\main.cpp(89,3): warning C4312: '형식 캐스트': 'DWORD'에서 더 큰 'unsigned int *'(으)로의 변환입니다.
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\WinAPIDemo\WinAPIDemo\main.cpp(93,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   WinAPIDemo.vcxproj -> C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\WinAPIDemo\x64\Debug\WinAPIDemo.exe
