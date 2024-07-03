@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\DX2DClasses">
+      <UniqueIdentifier>{bff8d701-5a3f-4692-858d-888d069ef0c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\UserDefine">
+      <UniqueIdentifier>{0bfe5b07-b90c-4323-be99-4bc0afec05ed}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DX2DClasses\SingletonRenderTarget.cpp">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="DX2DClasses\Vector2.cpp">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScene.cpp">
+      <Filter>소스 파일\UserDefine</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DX2DClasses\Driect2DFramework.cpp">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="DX2DClasses\Image.cpp">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="DX2DClasses\CollisionCheck.cpp">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="DX2DClasses\InputManager.cpp">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="DX2DClasses\DebugHelper.cpp">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="DX2DClasses\ColorBrushPalettet.cpp">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="DX2DClasses\ColorBrush.cpp">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="DX2DClasses\GameObject.cpp">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="DX2DClasses\Colliders.cpp">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveSampleScene.cpp">
+      <Filter>소스 파일\UserDefine</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionTestScene.cpp">
+      <Filter>소스 파일\UserDefine</Filter>
+    </ClCompile>
+    <ClCompile Include="DX2DClasses\Matrix3x3.cpp">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="DX2DClasses\Matrix3.cpp">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DX2DClasses\SingletonRenderTarget.h">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="DX2DClasses\Vector2.h">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="TestScene.h">
+      <Filter>소스 파일\UserDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DX2DClasses\Driect2DFramework.h">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="DX2DClasses\Image.h">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="DX2DClasses\CollisionCheck.h">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="DX2DClasses\InputManager.h">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="DX2DClasses\SceneManager.h">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="DX2DClasses\DebugHelper.h">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="DX2DClasses\ColorBrushPalettet.h">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="DX2DClasses\ColorBrush.h">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="DX2DClasses\GameObject.h">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="DX2DClasses\Colliders.h">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveSampleScene.h">
+      <Filter>소스 파일\UserDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionTestScene.h">
+      <Filter>소스 파일\UserDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="DX2DClasses\Matrix3x3.h">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="DX2DClasses\Matrix3.h">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="DX2DClasses\UtilityDefine.h">
+      <Filter>소스 파일\DX2DClasses</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Direct2D.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Direct2D.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DX2DClasses::CCircleCollider">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAABAAAAAAAAAACQoAAACACAAAAAAAgAoABAA=</HashCode>
+      <FileName>DX2DClasses\Colliders.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DX2DClasses::CRectCollider">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAACAAAAACQYQAACACAAAAAAAAAMBEAA=</HashCode>
+      <FileName>DX2DClasses\Colliders.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DX2DClasses::CBoxCollider">
+    <Position X="4.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAACAAkCACQYQAASACAAAAAAACAMAEAA=</HashCode>
+      <FileName>DX2DClasses\Colliders.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DX2DClasses::CTransform">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIEAAAAACIAEBAAEQABAEAAIAAFAgABEAA=</HashCode>
+      <FileName>DX2DClasses\GameObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DX2DClasses::CColorBrush" Collapsed="true">
+    <Position X="14.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAQAQQAAAAAAAAAA=</HashCode>
+      <FileName>DX2DClasses\ColorBrush.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DX2DClasses::CCollider">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACQIAAACACAAAgAQAAAIAAAA=</HashCode>
+      <FileName>DX2DClasses\Colliders.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DX2DClasses::CCollisionCheck">
+    <Position X="8.75" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="DX2DClasses::CCollisionCheck::E_LINE_CHECK">
+        <TypeIdentifier>
+          <NewMemberFileName>DX2DClasses\CollisionCheck.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CCAAAAgABAQgAQAAAAAAAAAgAUAAEAAAEQAAAAAAAAA=</HashCode>
+      <FileName>DX2DClasses\CollisionCheck.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DX2DClasses::CColorBrushPalettet" Collapsed="true">
+    <Position X="16.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQgAAAAAAAAEBQAAAAAAAAAgABAAACA=</HashCode>
+      <FileName>DX2DClasses\ColorBrushPalettet.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DX2DClasses::CDebugHelper" Collapsed="true">
+    <Position X="16.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAACAAAQAAAABQIAEAAAAAAAAA=</HashCode>
+      <FileName>DX2DClasses\DebugHelper.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DX2DClasses::CDriect2DFramwork" Collapsed="true">
+    <Position X="16.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAQAAACAACCiAAAAAAAAAAAAAAJAAACA=</HashCode>
+      <FileName>DX2DClasses\Driect2DFramework.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DX2DClasses::CImage">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAQAAJAAAAgAAAAgAAAEgAAAECAQAAACAQAE=</HashCode>
+      <FileName>DX2DClasses\Image.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DX2DClasses::CAnimator2D">
+    <Position X="11" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAABAQACAAAAAAAAAAAAAAAAADAAAAAIAAAgAAA=</HashCode>
+      <FileName>DX2DClasses\GameObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DX2DClasses::CGameObject">
+    <Position X="13.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAEAAAAAAwAAEABAAAFQAAIAAAAAAAQIAJAAAAA=</HashCode>
+      <FileName>DX2DClasses\GameObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DX2DClasses::CInputManager">
+    <Position X="16.5" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="DX2DClasses::CInputManager::E_KEY_STATE">
+        <TypeIdentifier>
+          <NewMemberFileName>DX2DClasses\InputManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAEAACAA=</HashCode>
+      <FileName>DX2DClasses\InputManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DX2DClasses::CSingletonRenderTarget" Collapsed="true">
+    <Position X="16.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAgAAAAAAAACIAAAAAAAAAI=</HashCode>
+      <FileName>DX2DClasses\SingletonRenderTarget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D2D1::Matrix3x2F" Collapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAACBAcACAAIAAAAAAAIAACAAAEAgAACAAAI=</HashCode>
+      <FileName>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\d2d1helper.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DX2DClasses::CTestScene">
+    <Position X="8.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wQQAIAQAQAABBxAIMAAAAAQACQAAAQAAAACAgBAAQAA=</HashCode>
+      <FileName>TestScene.h</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Struct Name="DX2DClasses::SVector2" Collapsed="true">
+    <Position X="14.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAMAAAAAAgCAAAAEAAAAAAACACIAABAAEDgCgEAgQA=</HashCode>
+      <FileName>DX2DClasses\Vector2.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="DX2DClasses::ISceneManager">
+    <Position X="6.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>DX2DClasses\SceneManager.h</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>
