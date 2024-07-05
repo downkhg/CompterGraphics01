@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\Administrator\Source\Repos\CompterGraphics01\DesignPattern\4.State\4.State\main.cpp(4,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  State.cpp
+  코드를 생성하고 있습니다...
+  4.State.vcxproj -> C:\Users\Administrator\Source\Repos\CompterGraphics01\DesignPattern\4.State\x64\Debug\4.State.exe
