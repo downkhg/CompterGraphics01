@@ -1,0 +1,13 @@
+﻿  Observer.cpp
+C:\Users\Administrator\Source\Repos\CompterGraphics01\DesignPattern\3.Observer\3.Observer\Observer.cpp(116,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+C:\Users\Administrator\Source\Repos\CompterGraphics01\DesignPattern\3.Observer\3.Observer\Observer.cpp(120,8): error C2092: 'medics' 배열 요소 형식은 함수 또는 추상 클래스 형식일 수 없습니다.
+C:\Users\Administrator\Source\Repos\CompterGraphics01\DesignPattern\3.Observer\3.Observer\Observer.cpp(120,8): error C2259: 'Medic': 추상 클래스를 인스턴스화할 수 없습니다.
+  C:\Users\Administrator\Source\Repos\CompterGraphics01\DesignPattern\3.Observer\3.Observer\Observer.cpp(51,7):
+  'Medic' 선언을 참조하십시오.
+  C:\Users\Administrator\Source\Repos\CompterGraphics01\DesignPattern\3.Observer\3.Observer\Observer.cpp(120,8):
+  다음 멤버가 원인입니다.
+  C:\Users\Administrator\Source\Repos\CompterGraphics01\DesignPattern\3.Observer\3.Observer\Observer.cpp(120,8):
+  'void Unit::Move(int,int)': abstract입니다.
+  C:\Users\Administrator\Source\Repos\CompterGraphics01\DesignPattern\3.Observer\3.Observer\Observer.cpp(17,15):
+  'Unit::Move' 선언을 참조하십시오.
+  
