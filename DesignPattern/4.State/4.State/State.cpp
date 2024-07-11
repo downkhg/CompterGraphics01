@@ -54,9 +54,30 @@ void StateOne::GoNext(Context* context)
 	context->SetState(new StateTow);
 }
 
+Context::Context()
+{
+	m_pState = new StateOne();
+
+	cout << typeid(*this).name() << endl;
+}
+
+Context::~Context()
+{
+	if (m_pState)
+	{
+		delete m_pState;
+	}
+
+	cout << "~" << typeid(*this).name() << endl;
+}
 
 void Context::SetState(State* state)
 {
+	if (m_pState)
+	{
+		delete m_pState;
+	}
+	
 	m_pState = state;
 }
 
