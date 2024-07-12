@@ -1,29 +1,30 @@
-﻿  Direct2D.cpp
-C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\Direct2D\Direct2D\Direct2D.cpp(134,56): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  stdafx.cpp
+  Direct2D.cpp
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\Direct2D\Direct2D\Direct2D.cpp(114,56): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/Direct2D.cpp'을(를) 컴파일하는 중)
   
-C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\Direct2D\Direct2D\Direct2D.cpp(258,12): warning C4101: 'wmEvent' :참조되지 않은 지역 변수입니다.
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\Direct2D\Direct2D\Direct2D.cpp(254,12): warning C4101: 'wmEvent' :참조되지 않은 지역 변수입니다.
   (소스 파일 '/Direct2D.cpp'을(를) 컴파일하는 중)
   
-C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\Direct2D\Direct2D\Direct2D.cpp(258,6): warning C4101: 'wmId' :참조되지 않은 지역 변수입니다.
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\Direct2D\Direct2D\Direct2D.cpp(254,6): warning C4101: 'wmId' :참조되지 않은 지역 변수입니다.
   (소스 파일 '/Direct2D.cpp'을(를) 컴파일하는 중)
   
-C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\Direct2D\Direct2D\Direct2D.cpp(333,6): warning C4101: 'hdc' :참조되지 않은 지역 변수입니다.
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\Direct2D\Direct2D\Direct2D.cpp(327,6): warning C4101: 'hdc' :참조되지 않은 지역 변수입니다.
   (소스 파일 '/Direct2D.cpp'을(를) 컴파일하는 중)
   
-C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\Direct2D\Direct2D\Direct2D.cpp(332,14): warning C4101: 'ps' :참조되지 않은 지역 변수입니다.
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\Direct2D\Direct2D\Direct2D.cpp(326,14): warning C4101: 'ps' :참조되지 않은 지역 변수입니다.
   (소스 파일 '/Direct2D.cpp'을(를) 컴파일하는 중)
   
-C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\Direct2D\Direct2D\Direct2D.cpp(331,12): warning C4101: 'wmEvent' :참조되지 않은 지역 변수입니다.
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\Direct2D\Direct2D\Direct2D.cpp(325,12): warning C4101: 'wmEvent' :참조되지 않은 지역 변수입니다.
   (소스 파일 '/Direct2D.cpp'을(를) 컴파일하는 중)
   
-C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\Direct2D\Direct2D\Direct2D.cpp(331,6): warning C4101: 'wmId' :참조되지 않은 지역 변수입니다.
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\Direct2D\Direct2D\Direct2D.cpp(325,6): warning C4101: 'wmId' :참조되지 않은 지역 변수입니다.
   (소스 파일 '/Direct2D.cpp'을(를) 컴파일하는 중)
   
-C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\Direct2D\Direct2D\Direct2D.cpp(453,49): warning C4244: '인수': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\Direct2D\Direct2D\Direct2D.cpp(450,54): warning C4244: '인수': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/Direct2D.cpp'을(를) 컴파일하는 중)
   
-C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\Direct2D\Direct2D\Direct2D.cpp(453,33): warning C4244: '인수': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\Direct2D\Direct2D\Direct2D.cpp(450,38): warning C4244: '인수': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/Direct2D.cpp'을(를) 컴파일하는 중)
   
   Direct2D.vcxproj -> C:\Users\Administrator\Source\Repos\CompterGraphics01\WindowsPrograming\Direct2D\Debug\Direct2D.exe
