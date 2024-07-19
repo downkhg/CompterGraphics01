@@ -43,17 +43,19 @@ struct CUSTOMVERTEX
 HRESULT InitD3D(HWND hWnd)
 {
 	/// 디바이스를 생성하기위한 D3D객체 생성
+	//GPU는 CPU와 프로세스가 다르기때문에, GPU로부터 접근하기위해서 주소값을 포인터로 가져온다.
 	if (NULL == (g_pD3D = Direct3DCreate9(D3D_SDK_VERSION)))
 		return E_FAIL;
 
 	/// 디바이스를 생성할 구조체
+	//디바이스의 설정을 초기화 한다.
 	D3DPRESENT_PARAMETERS d3dpp;
 	ZeroMemory(&d3dpp, sizeof(d3dpp));
 	d3dpp.Windowed = TRUE;
 	d3dpp.SwapEffect = D3DSWAPEFFECT_DISCARD;
 	d3dpp.BackBufferFormat = D3DFMT_UNKNOWN;
 
-	/// 디바이스 생성
+	/// 디바이스 생성: 초기화된 값으로 3d디바이스 구조체를 초기화한다.
 	if (FAILED(g_pD3D->CreateDevice(D3DADAPTER_DEFAULT, D3DDEVTYPE_HAL, hWnd,
 		D3DCREATE_SOFTWARE_VERTEXPROCESSING,
 		&d3dpp, &g_pd3dDevice)))
@@ -196,22 +198,22 @@ INT WINAPI WinMain(HINSTANCE hInst, HINSTANCE, LPSTR, INT)
 		"D3D Tutorial", NULL };
 	RegisterClassEx(&wc);
 
-	/// 윈도우 생성
+	/// 윈도우 생성: WInAPI를 이용하여 윈도우 창을 생성한다.
 	HWND hWnd = CreateWindow("D3D Tutorial", "D3D Tutorial 02: Vertices",
 		WS_OVERLAPPEDWINDOW, 100, 100, 300, 300,
 		GetDesktopWindow(), NULL, wc.hInstance, NULL);
 
-	/// Direct3D 초기화
+	/// Direct3D 초기화: 3d디바이스(GPU)를 초기화한다.
 	if (SUCCEEDED(InitD3D(hWnd)))
 	{
-		/// 정점버퍼 초기화
+		/// 정점버퍼 초기화: 버텍스버퍼에 값을 초기화하고 3d디바이스 장치에 버텍스버퍼를 생성/복제한다.
 		if (SUCCEEDED(InitVB()))
 		{
 			/// 윈도우 출력
 			ShowWindow(hWnd, SW_SHOWDEFAULT);
 			UpdateWindow(hWnd);
 
-			/// 메시지 루프
+			/// 메시지 루프: 윈도우가 작동하는 중에 메세지를 받기위한 루프
 			MSG msg;
 			ZeroMemory(&msg, sizeof(msg));
 			while (msg.message != WM_QUIT)
@@ -224,6 +226,7 @@ INT WINAPI WinMain(HINSTANCE hInst, HINSTANCE, LPSTR, INT)
 				}
 				else
 					/// 처리할 메시지가 없으면 Render()함수 호출
+					//랜더링: 백버퍼를 초기화하고 다음 프레임을 렌더링하고, 전면버퍼와 교환한다.
 					Render();
 			}
 		}
