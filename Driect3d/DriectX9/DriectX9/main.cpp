@@ -85,6 +85,7 @@ HRESULT InitD3D(HWND hWnd)
 HRESULT InitVB()
 {
 	/// 삼각형을 렌더링하기위해 세개의 정점을 선언
+	//연결된 점의 순서를 변경하면 면이 뒤집혀 보이지않게된다.
 	CUSTOMVERTEX vertices[] = // x, y, z, rhw, color
 	{
 		{ 150.0f,  50.0f, 0.5f, 1.0f, 0xffff0000, },  //1
