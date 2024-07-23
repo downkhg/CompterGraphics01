@@ -3,6 +3,7 @@
 
 #include <d3d9.h>
 #include <d3dx9.h>
+#include "GlobalFunc.h"
 
 #ifndef MAINBODY
 #define DECLARE extern
@@ -10,16 +11,16 @@
 #define DECLARE
 #endif
 
-#ifndef S_DEL
-	#define S_DEL(p)		{ if(p) { delete (p); (p) = NULL; } }
+#ifndef DEL
+	#define DEL(p)		{ if(p) { delete (p); (p) = NULL; } }
 #endif
 
-#ifndef S_DELS
-	#define S_DELS(p)		{ if(p) { delete[] (p); (p) = NULL; } }
+#ifndef DELS
+	#define DELS(p)		{ if(p) { delete[] (p); (p) = NULL; } }
 #endif
 
-#ifndef S_REL
-	#define S_REL(p)		{ if(p) { (p)->Release(); (p) = NULL; } }
+#ifndef REL
+	#define REL(p)		{ if(p) { (p)->Release(); (p) = NULL; } }
 #endif
 
 #define IS_IN_RANGE(value,r0,r1) (( ((r0) <= (value)) && ((value) <= (r1)) ) ? 1 : 0)

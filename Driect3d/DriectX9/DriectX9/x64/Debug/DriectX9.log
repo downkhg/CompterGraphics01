@@ -1,17 +1,62 @@
-﻿  main.cpp
+﻿  Dib.cpp
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(52,43): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(55,73): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(57,17): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(165,17): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(181,17): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(210,11): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(211,11): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(237,11): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(238,11): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(273,10): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(273,29): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(294,12): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(300,13): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(306,12): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(330,12): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(330,42): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(349,13): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(350,16): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(389,13): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(390,16): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(414,13): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(415,16): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(439,13): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(440,16): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(502,12): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(503,12): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(512,12): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(513,12): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(546,11): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(547,11): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(573,11): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(574,11): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(723,12): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(786,11): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(787,11): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(788,12): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\Dib.cpp(813,10): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+  GlobalFunc.cpp
+  HeightMap.cpp
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\ZQuadTree.h(63,36): error C2102: '&'에 l-value가 있어야 합니다.
+  (소스 파일 'HeightMap.cpp'을(를) 컴파일하는 중)
+  
   ZCamera.cpp
-C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\main.cpp(314,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\main.cpp(315,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\main.cpp(325,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\main.cpp(425,25): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\main.cpp(427,25): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\ZCamera.cpp(22,44): error C2102: '&'에 l-value가 있어야 합니다.
   ZFLog.cpp
-C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\ZFLog.cpp(10,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\ZFLog.cpp(90,12): warning C4244: '초기화 중': 'LRESULT'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\ZFLog.cpp(64,2): warning C4996: '_strdate': This function or variable may be unsafe. Consider using _strdate_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\ZFLog.cpp(65,2): warning C4996: '_strtime': This function or variable may be unsafe. Consider using _strtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\ZFLog.cpp(66,2): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\ZFLog.cpp(78,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  ZWater.cpp
+  ZFrustum.cpp
+  ZQuadTree.cpp
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\ZQuadTree.h(63,36): error C2102: '&'에 l-value가 있어야 합니다.
+  (소스 파일 'ZQuadTree.cpp'을(를) 컴파일하는 중)
+  
+  ZTerrain.cpp
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\ZQuadTree.h(63,36): error C2102: '&'에 l-value가 있어야 합니다.
+  (소스 파일 'ZTerrain.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\ZTerrain.cpp(96,24): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
   코드를 생성하고 있습니다...
-  DriectX9.vcxproj -> C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\x64\Debug\DriectX9.exe

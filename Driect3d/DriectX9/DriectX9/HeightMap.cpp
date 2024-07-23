@@ -1,8 +1,8 @@
 /**-----------------------------------------------------------------------------
- * \brief 빌보드처리
- * 파일: main.cpp
+ * \brief 높이맵
+ * 파일: HeightMap.cpp
  *
- * 설명: 빌보드 처리방법을 익혀보자
+ * 설명: QuadTree+LOD+Triangle Crack fix
  *       
  *------------------------------------------------------------------------------
  */
@@ -12,16 +12,14 @@
 #include <d3d9.h>
 #include <d3dx9.h>
 #include "ZCamera.h"
+#include "ZFrustum.h"
+#include "ZTerrain.h"
 #include "ZFLog.h"
-#include "ZWater.h"
-
-#include <vector>
-using namespace std;
 
 #define WINDOW_W		500
 #define WINDOW_H		500
-#define WINDOW_TITLE	"Billboard"
-
+#define WINDOW_TITLE	"QuadTree+TriangleCrackFixed"
+#define BMP_HEIGHTMAP	"map129.bmp"
 /**-----------------------------------------------------------------------------
  *  전역변수
  *------------------------------------------------------------------------------
@@ -30,7 +28,6 @@ HWND					g_hwnd = NULL;
 
 LPDIRECT3D9             g_pD3D       = NULL; // D3D 디바이스를 생성할 D3D객체변수
 LPDIRECT3DDEVICE9       g_pd3dDevice = NULL; // 렌더링에 사용될 D3D디바이스
-LPDIRECT3DTEXTURE9		g_pTexBillboard[4] = { NULL, NULL, NULL, NULL };// 빌보드로 사용할 텍스처
 
 D3DXMATRIXA16			g_matAni;
 D3DXMATRIXA16			g_matWorld;
@@ -39,11 +36,14 @@ D3DXMATRIXA16			g_matProj;
 
 DWORD					g_dwMouseX = 0;			// 마우스의 좌표
 DWORD					g_dwMouseY = 0;			// 마우스의 좌표
-BOOL					g_bBillboard = TRUE;	// 빌보드처리를 할것인가?
+BOOL					g_bHideFrustum = TRUE;	// Frustum을 안그릴 것인가?
+BOOL					g_bLockFrustum = FALSE;	// Frustum을 고정할 것인가?
 BOOL					g_bWireframe = FALSE;	// 와이어프레임으로 그릴것인가?
 
+//ZFLog*					g_pLog = NULL;		// Log는 ZFLog.h에서 자동으로 선언된다
 ZCamera*				g_pCamera = NULL;	// Camera 클래스
-ZWater*					g_pWater = NULL;
+ZFrustum*				g_pFrustum = NULL;	// Frustum 클래스
+ZTerrain*				g_pTerrain = NULL;
 
 /**-----------------------------------------------------------------------------
  * Direct3D 초기화
@@ -93,8 +93,8 @@ void InitMatrix()
     g_pd3dDevice->SetTransform( D3DTS_WORLD, &g_matWorld );
 
     /// 뷰 행렬을 설정
-    D3DXVECTOR3 vEyePt( 0.0f, 5.0f, (float)-3.0f );
-    D3DXVECTOR3 vLookatPt( 0.0f, 5.0f, 0.0f );
+    D3DXVECTOR3 vEyePt( 0.0f, 50.0f, (float)-30.0f );
+    D3DXVECTOR3 vLookatPt( 0.0f, 0.0f, 0.0f );
     D3DXVECTOR3 vUpVec( 0.0f, 1.0f, 0.0f );
     D3DXMatrixLookAtLH( &g_matView, &vEyePt, &vLookatPt, &vUpVec );
     g_pd3dDevice->SetTransform( D3DTS_VIEW, &g_matView );
@@ -118,12 +118,6 @@ void InitMatrix()
 HRESULT InitGeometry()
 {
 	InitMatrix();
-	// 빌보드로 사용할 텍스처 이미지
-	D3DXCreateTextureFromFile( g_pd3dDevice, "tree01S.dds", &g_pTexBillboard[0] );
-	D3DXCreateTextureFromFile( g_pd3dDevice, "tree02S.dds", &g_pTexBillboard[1] );
-	D3DXCreateTextureFromFile( g_pd3dDevice, "tree35S.dds", &g_pTexBillboard[2] );
-	D3DXCreateTextureFromFile( g_pd3dDevice, "ExplosionEffect.png", &g_pTexBillboard[3] );
-
 
 	// 최초의 마우스 위치 보관
 	POINT	pt;
@@ -135,10 +129,21 @@ HRESULT InitGeometry()
 
 HRESULT InitObjects()
 {
+	const char*	tex[4] = { 
+		"tile2.tga", 
+		"lightmap.tga", 
+		"", 
+		"" };
+	D3DXVECTOR3	vScale;
+
+	vScale.x = vScale.z = 1.0f; vScale.y = .1f;
+//	g_pLog = new ZFLog( ZF_LOG_TARGET_WINDOW | ZF_LOG_TARGET_FILE, "log.txt" );
 	g_pLog = new ZFLog( ZF_LOG_TARGET_WINDOW );
 	g_pCamera = new ZCamera;
-	g_pWater = new ZWater;
-	g_pWater->Create( g_pd3dDevice, 64, 64, 100 );
+	g_pFrustum = new ZFrustum;
+	g_pTerrain = new ZTerrain;
+	if( FAILED( g_pTerrain->Create( g_pd3dDevice, &vScale, 0.05f, BMP_HEIGHTMAP, tex ) ) )
+		return E_FAIL;
 
 	return S_OK;
 }
@@ -146,9 +151,10 @@ HRESULT InitObjects()
 void DeleteObjects()
 {
 	/// 등록된 클래스 소거
-	S_DEL( g_pWater );
-	S_DEL( g_pLog );
-	S_DEL( g_pCamera );
+	DEL( g_pTerrain );
+	DEL( g_pFrustum );
+	DEL( g_pLog );
+	DEL( g_pCamera );
 }
 
 /**-----------------------------------------------------------------------------
@@ -157,9 +163,8 @@ void DeleteObjects()
  */
 VOID Cleanup()
 {
-	for( int i = 0 ; i < 4 ; i++ ) S_REL( g_pTexBillboard[i] );
-	S_REL( g_pd3dDevice );
-	S_REL( g_pD3D );
+	REL( g_pd3dDevice );
+	REL( g_pD3D );
 }
 
 
@@ -190,8 +195,9 @@ VOID SetupLights()
  */
 void LogStatus( void )
 {
-	//g_pLog->Log( "Wireframe:%d", g_bWireframe );
-	//g_pLog->Log( "BillBoard:%d", g_bBillboard );
+	g_pLog->Log( "Wireframe:%d", g_bWireframe );
+	g_pLog->Log( "HideFrustum:%d", g_bHideFrustum );
+	g_pLog->Log( "LockFrustum:%d", g_bLockFrustum );
 }
 
 
@@ -209,7 +215,7 @@ void LogFPS(void)
 	{
 		nTick = GetTickCount();
 		/// FPS값 출력
-		//g_pLog->Log("FPS:%d", nFPS );
+		g_pLog->Log("FPS:%d", nFPS );
 
 		nFPS = 0;
 		LogStatus();	/// 상태정보를 여기서 출력(1초에 한번)
@@ -266,7 +272,7 @@ void ProcessKey( void )
  */
 void ProcessInputs( void )
 {
-	//ProcessMouse();
+	ProcessMouse();
 	ProcessKey();
 }
 
@@ -281,158 +287,13 @@ VOID Animate()
 	SetupLights();
 	ProcessInputs();
 
+	D3DXMATRIXA16	m;
+	D3DXMATRIXA16	*pView;
+	pView = g_pCamera->GetViewMatrix();	// 카메라 클래스로부터 행렬정보를 얻는다.
+	m = *pView * g_matProj;				// World좌표를 얻기위해서 View * Proj행렬을 계산한다.
+	if( !g_bLockFrustum ) g_pFrustum->Make( &m );	// View*Proj행렬로 Frustum을 만든다.
+
 	LogFPS();
-}
-
-struct MYVERTEX
-{
-	enum { FVF = D3DFVF_XYZ | D3DFVF_TEX1 };
-	float px, py, pz;
-	float tu, tv;
-};
-
-struct TexCoords
-{
-	float u;
-	float v;
-	TexCoords(float u = 0, float v = 0)
-	{
-		this->u = u;
-		this->v = v;
-	}
-	void Print()
-	{
-		printf("(%f,%f)\n", this->u, this->v);
-	}
-};
-
-vector<vector<vector<TexCoords>>> arrTextureCoords;
-int nSellWidth = 4;
-int nSellHighit = 4;
-void InitTextureCoords()
-{
-	FILE* pFile = fopen("texCoords.txt", "rt");
-	fscanf(pFile, "%d %d\n", &nSellWidth, &nSellHighit);
-	arrTextureCoords.resize(nSellHighit);
-	for (int y = 0; y < nSellHighit; y++)
-	{
-		arrTextureCoords[y].resize(nSellWidth);
-		for (int x = 0; x < nSellWidth; x++)
-		{
-			arrTextureCoords[y][x].resize(4);
-			for (int i = 0; i < 4; i++)
-			{
-				fscanf(pFile, "%f %f ", &arrTextureCoords[y][x][i].u, &arrTextureCoords[y][x][i].v);
-				printf("%f %f ", arrTextureCoords[y][x][i].u, arrTextureCoords[y][x][i].v);
-			}
-			printf("\n");
-		}
-	}
-	fclose(pFile);
-}
-
-
-
-int x = 0;
-int y = 0;
-void DrawBillboard()
-{
-	// 알파채널을 사용해서 투명텍스처 효과를 낸다
-	g_pd3dDevice->SetRenderState( D3DRS_ALPHABLENDENABLE,   TRUE );
-	g_pd3dDevice->SetRenderState( D3DRS_SRCBLEND,  D3DBLEND_SRCALPHA );
-	g_pd3dDevice->SetRenderState( D3DRS_DESTBLEND, D3DBLEND_INVSRCALPHA );
-	g_pd3dDevice->SetRenderState( D3DRS_ALPHATESTENABLE, TRUE );
-	g_pd3dDevice->SetRenderState( D3DRS_ALPHAREF,        0x08 );
-	g_pd3dDevice->SetRenderState( D3DRS_ALPHAFUNC, D3DCMP_GREATEREQUAL );
-
-	struct MYVERTEX
-	{
-		enum { FVF = D3DFVF_XYZ | D3DFVF_TEX1 };
-		float px, py, pz;
-		float tu, tv;
-	};
-
-	// 빌보드 정점
-	/*MYVERTEX vtx[4] = 
-	{ 
-		{ -1,  0, 0, 0, 1 },//tl
-		{ -1,  4, 0, 0, 0 },//bl
-		{  1,  0, 0, 1, 1 },//tr
-		{  1,  4, 0, 1, 0 } //br
-	};*/
-	//a b
-	//c d
-	MYVERTEX vtx[4] =
-	{
-		{ -1,  -1, 0, 0, 0.25 },
-		{ -1,  1, 0, 0, 0 },
-		{  1,  -1, 0, 0.25, 0.25 },
-		{  1,  1, 0, 0.25, 0 }
-	};
-
-	if (x < 4)
-	{
-		for (int i = 0; i < 4; i++)
-		{
-			vtx[i].tu = arrTextureCoords[y][x][i].u;
-			vtx[i].tv = arrTextureCoords[y][x][i].v;
-		}
-		x++;
-	}
-	else
-	{
-		x = 0;
-		if (y < 3) y++;
-		else y = 0;
-	}
-	
-	g_pLog->Log("[%d][%d]TL(%f,%f),TR(%f,%f),BL(%f,%f),BR(%f,%f)", x, y, vtx[0].tu, vtx[0].tv, vtx[2].tu, vtx[2].tv, vtx[1].tu, vtx[1].tv, vtx[3].tu, vtx[3].tv);
-
-	D3DXMATRIXA16	matBillboard;
-	D3DXMatrixIdentity( &matBillboard );
-
-	// 0번 텍스처에 빌보드 텍스처를 올린다
-	g_pd3dDevice->SetTexture( 1, NULL );
-	g_pd3dDevice->SetFVF( MYVERTEX::FVF );
-
-
-	if( g_bBillboard )
-	{
-		// Y축 회전행렬은 _11, _13, _31, _33번 행렬에 회전값이 들어간다
-		// 카메라의 Y축 회전행렬값을 읽어서 역행렬을 만들면 X,Z축이 고정된
-		// Y축 회전 빌보드 행렬을 만들수 있다
-		/*matBillboard._11 = g_pCamera->GetViewMatrix()->_11;
-		matBillboard._13 = g_pCamera->GetViewMatrix()->_13;
-		matBillboard._31 = g_pCamera->GetViewMatrix()->_31;
-		matBillboard._33 = g_pCamera->GetViewMatrix()->_33;*/
-		//회전축 동기화
-		for (int y = 0; y < 3; y++)
-		{
-			for (int x = 0; x < 3; x++)
-			{
-				matBillboard.m[y][x] = g_pCamera->GetBillMatrix()->m[y][x];
-			}
-		}
-
-		D3DXMatrixInverse( &matBillboard, NULL, &matBillboard );
-	}
-
-	// 빌보드의 좌표를 바꿔가며 찍는다
-	for( int z = 0 ; z <= 40 ; z += 5 )
-	{
-		for( int x = 0 ; x <= 40 ; x += 5 )
-		{
-			matBillboard._41 = x - 20;	
-			matBillboard._42 = 0;
-			matBillboard._43 = z - 20;
-			g_pd3dDevice->SetTexture( 0, g_pTexBillboard[(x+z)%4] );
-			g_pd3dDevice->SetTransform( D3DTS_WORLD, &matBillboard );
-			g_pd3dDevice->DrawPrimitiveUP( D3DPT_TRIANGLESTRIP, 2, vtx, sizeof(MYVERTEX) );
-		}
-	}
-
-	g_pd3dDevice->SetRenderState( D3DRS_ALPHATESTENABLE, FALSE );
-	g_pd3dDevice->SetTransform( D3DTS_WORLD, &g_matWorld );
 }
 
 
@@ -451,15 +312,14 @@ VOID Render()
     /// 렌더링 시작
     if( SUCCEEDED( g_pd3dDevice->BeginScene() ) )
     {
-		//g_pWater->Draw();
+		g_pTerrain->Draw( g_pFrustum );
+		if( !g_bHideFrustum ) g_pFrustum->Draw( g_pd3dDevice );
 
-		DrawBillboard();
 		/// 렌더링 종료
 		g_pd3dDevice->EndScene();
     }
 
     /// 후면버퍼를 보이는 화면으로!
-	Sleep(500);
     g_pd3dDevice->Present( NULL, NULL, NULL, NULL );
 }
 
@@ -488,7 +348,8 @@ LRESULT WINAPI MsgProc( HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam )
 					g_bWireframe = !g_bWireframe;
 					break;
 				case '2' :
-					g_bBillboard = !g_bBillboard;
+					g_bLockFrustum = !g_bLockFrustum;
+					g_bHideFrustum = !g_bLockFrustum;
 					break;
 			}
 			break;
@@ -504,7 +365,7 @@ LRESULT WINAPI MsgProc( HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam )
  * 프로그램 시작점
  *------------------------------------------------------------------------------
  */
-INT WINAPI WinMain( HINSTANCE hInst, HINSTANCE, LPSTR, INT )
+INT WINAPI WinMain( HINSTANCE hInst, HINSTANCE, LPSTR , INT )
 {
     /// 윈도우 클래스 등록
     WNDCLASSEX wc = { sizeof(WNDCLASSEX), CS_CLASSDC, MsgProc, 0L, 0L,
@@ -519,8 +380,6 @@ INT WINAPI WinMain( HINSTANCE hInst, HINSTANCE, LPSTR, INT )
 
 	g_hwnd = hWnd;
 
-	srand( GetTickCount() );
-	InitTextureCoords();
     /// Direct3D 초기화
     if( SUCCEEDED( InitD3D( hWnd ) ) )
     {
@@ -553,6 +412,6 @@ INT WINAPI WinMain( HINSTANCE hInst, HINSTANCE, LPSTR, INT )
     }
 
 	DeleteObjects();
-    UnregisterClass( "BasicFrame", wc.hInstance );
+    UnregisterClass( "D3D Tutorial", wc.hInstance );
     return 0;
 }

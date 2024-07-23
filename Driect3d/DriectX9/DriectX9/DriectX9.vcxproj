@@ -18,6 +18,34 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Dib.cpp" />
+    <ClCompile Include="GlobalFunc.cpp" />
+    <ClCompile Include="HeightMap.cpp" />
+    <ClCompile Include="ZCamera.cpp" />
+    <ClCompile Include="ZFLog.cpp" />
+    <ClCompile Include="ZFrustum.cpp" />
+    <ClCompile Include="ZQuadTree.cpp" />
+    <ClCompile Include="ZTerrain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="define.h" />
+    <ClInclude Include="Dib.h" />
+    <ClInclude Include="GlobalFunc.h" />
+    <ClInclude Include="ZCamera.h" />
+    <ClInclude Include="ZFLog.h" />
+    <ClInclude Include="ZFrustum.h" />
+    <ClInclude Include="ZQuadTree.h" />
+    <ClInclude Include="ZTerrain.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="lightmap.tga" />
+    <Image Include="map.bmp" />
+    <Image Include="map128.bmp" />
+    <Image Include="map129.bmp" />
+    <Image Include="map130.bmp" />
+    <Image Include="tile2.tga" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -131,30 +159,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="ZCamera.cpp" />
-    <ClCompile Include="ZFLog.cpp" />
-    <ClCompile Include="ZWater.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="ExplosionEffect.png" />
-    <Image Include="tex.jpg" />
-    <Image Include="tree01S.dds" />
-    <Image Include="tree02S.dds" />
-    <Image Include="tree1.bmp" />
-    <Image Include="tree35S.dds" />
-    <Image Include="water1.bmp" />
-    <Image Include="water2.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="ZCamera.h" />
-    <ClInclude Include="ZFLog.h" />
-    <ClInclude Include="ZWater.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="texCoords.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

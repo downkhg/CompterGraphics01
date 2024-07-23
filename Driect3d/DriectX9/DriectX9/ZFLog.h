@@ -10,7 +10,7 @@
 #define ZF_LOG_TARGET_WINDOW			0x00000004
 #define ZF_LOG_TARGET_ALL				(ZF_LOG_TARGET_CONSOLE|ZF_LOG_TARGET_FILE|ZF_LOG_TARGET_WINDOW)
 #define ZF_LOG_WINDOW_TITLE				"ZEngine F-Killer"
-#define ZF_LOG_WINDOW_CX				1000
+#define ZF_LOG_WINDOW_CX				300
 #define ZF_LOG_WINDOW_CY				600
 
 class ZFLog
@@ -20,10 +20,10 @@ class ZFLog
 	HWND			m_hwnd;
 	HWND			m_hwndList;
 public:
-			ZFLog( UINT32 nTarget, LPSTR szFilename = NULL );
+			ZFLog( UINT32 nTarget, const char* szFilename = NULL );
 			~ZFLog();
 	void	CreateLogWindow();
-	int		Log(const char* fmt, ... );
+	int		Log( const char* fmt, ... );
 
 private:
 	static	LRESULT CALLBACK

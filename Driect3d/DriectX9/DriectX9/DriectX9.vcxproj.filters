@@ -15,59 +15,75 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="GlobalFunc.cpp">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="HeightMap.cpp">
+      <Filter>헤더 파일</Filter>
     </ClCompile>
     <ClCompile Include="ZCamera.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClCompile>
     <ClCompile Include="ZFLog.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ZWater.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="ZFrustum.cpp">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ZQuadTree.cpp">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ZTerrain.cpp">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Dib.cpp">
+      <Filter>헤더 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="tree01S.dds">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="tree1.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="tree02S.dds">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="tree35S.dds">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="water1.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="water2.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="tex.jpg">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="ExplosionEffect.png">
-      <Filter>리소스 파일</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="GlobalFunc.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
     <ClInclude Include="ZCamera.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="ZFLog.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="ZWater.h">
+    <ClInclude Include="ZFrustum.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ZQuadTree.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ZTerrain.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="define.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Dib.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="texCoords.txt">
-      <Filter>리소스 파일</Filter>
-    </Text>
+    <Image Include="lightmap.tga">
+      <Filter>헤더 파일</Filter>
+    </Image>
+    <Image Include="map.bmp">
+      <Filter>헤더 파일</Filter>
+    </Image>
+    <Image Include="map128.bmp">
+      <Filter>헤더 파일</Filter>
+    </Image>
+    <Image Include="map129.bmp">
+      <Filter>헤더 파일</Filter>
+    </Image>
+    <Image Include="map130.bmp">
+      <Filter>헤더 파일</Filter>
+    </Image>
+    <Image Include="tile2.tga">
+      <Filter>헤더 파일</Filter>
+    </Image>
   </ItemGroup>
 </Project>

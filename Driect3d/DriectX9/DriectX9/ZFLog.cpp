@@ -2,12 +2,12 @@
 #include <time.h>
 
 
-ZFLog::ZFLog( UINT32 nTarget, LPSTR szFilename )
+ZFLog::ZFLog( UINT32 nTarget, const char* szFilename )
 {
 	m_nTarget = nTarget;
 
 	if( nTarget & ZF_LOG_TARGET_FILE )
-		strcpy( m_szFilename, szFilename );
+		lstrcpy( m_szFilename, szFilename );
 	else
 		m_szFilename[0] = NULL;
 
@@ -45,7 +45,7 @@ void ZFLog::CreateLogWindow()
 
 	cx = ZF_LOG_WINDOW_CX;
 	cy = ZF_LOG_WINDOW_CY;
-	x = GetSystemMetrics( SM_CXSCREEN ) - cx;
+	x = GetSystemMetrics( SM_CXFULLSCREEN ) - cx;
 	y = 0;
 
 	m_hwnd = CreateWindow( "ZLogWindow", ZF_LOG_WINDOW_TITLE, WS_POPUP | WS_CAPTION, x, y, cx, cy, NULL, NULL, GetModuleHandle( NULL ), NULL );
