@@ -1,2 +1,17 @@
 ﻿  main.cpp
+  ZCamera.cpp
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\main.cpp(314,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\main.cpp(315,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\main.cpp(325,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\main.cpp(425,25): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\main.cpp(427,25): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  ZFLog.cpp
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\ZFLog.cpp(10,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\ZFLog.cpp(90,12): warning C4244: '초기화 중': 'LRESULT'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\ZFLog.cpp(64,2): warning C4996: '_strdate': This function or variable may be unsafe. Consider using _strdate_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\ZFLog.cpp(65,2): warning C4996: '_strtime': This function or variable may be unsafe. Consider using _strtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\ZFLog.cpp(66,2): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\DriectX9\ZFLog.cpp(78,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  ZWater.cpp
+  코드를 생성하고 있습니다...
   DriectX9.vcxproj -> C:\Users\Administrator\Source\Repos\CompterGraphics01\Driect3d\DriectX9\x64\Debug\DriectX9.exe

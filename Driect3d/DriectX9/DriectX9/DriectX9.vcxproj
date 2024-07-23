@@ -105,7 +105,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
@@ -133,12 +133,27 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ZCamera.cpp" />
+    <ClCompile Include="ZFLog.cpp" />
+    <ClCompile Include="ZWater.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="tiger.x" />
+    <Image Include="ExplosionEffect.png" />
+    <Image Include="tex.jpg" />
+    <Image Include="tree01S.dds" />
+    <Image Include="tree02S.dds" />
+    <Image Include="tree1.bmp" />
+    <Image Include="tree35S.dds" />
+    <Image Include="water1.bmp" />
+    <Image Include="water2.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="tiger.bmp" />
+    <ClInclude Include="ZCamera.h" />
+    <ClInclude Include="ZFLog.h" />
+    <ClInclude Include="ZWater.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="texCoords.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
