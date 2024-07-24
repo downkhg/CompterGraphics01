@@ -60,7 +60,8 @@ private:
 	/// 두점 사이의 거리를 구한다.
 	float		_GetDistance( D3DXVECTOR3* pv1, D3DXVECTOR3* pv2 ) 
 				{
-					return D3DXVec3Length( &(*pv2 - *pv1) );
+					D3DXVECTOR3 vTemp = *pv2 - *pv1;
+					return D3DXVec3Length( &vTemp );
 				}
 
 	/// 카메라와 현재 노드와의 거리값을 기준으로 LOD값을 구한다.

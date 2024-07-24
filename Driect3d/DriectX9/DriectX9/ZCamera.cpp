@@ -19,7 +19,8 @@ D3DXMATRIXA16*	ZCamera::SetView( D3DXVECTOR3* pvEye,D3DXVECTOR3* pvLookat,D3DXVE
 	m_vEye		= *pvEye;
 	m_vLookat	= *pvLookat;
 	m_vUp		= *pvUp;
-	D3DXVec3Normalize( &m_vView, &( m_vLookat - m_vEye ) );
+	D3DXVECTOR3 vLook = m_vLookat - m_vEye;
+	D3DXVec3Normalize( &m_vView, &vLook );
 	D3DXVec3Cross( &m_vCross, &m_vUp, &m_vView );
 
 	D3DXMatrixLookAtLH( &m_matView, &m_vEye, &m_vLookat, &m_vUp);
